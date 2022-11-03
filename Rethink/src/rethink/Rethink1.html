@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        body{
+            
+            background-color: #141414;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            color: #6cb55a;
+            margin-left: 36%;
+            margin-top: 2%;
+            justify-content: center;
+        }
+
+        .box{
+            position: absolute;
+            padding: 15px;
+            border-radius: 15px;
+            top: 15%;
+            width: 20%;
+            background-color: #070707;
+        }
+
+        .inputBox{
+            position: relative;
+
+        }
+
+        .inputUser{
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none;
+            color: rgb(228, 254, 228);
+            font-size: 15px;
+            width: 100%;
+            letter-spacing: 1.2px;
+        }
+        
+        .labelInput{
+            position: absolute;
+            top:0px;
+            left: 0px;
+            pointer-events: none;
+            transition: .5s;
+        }
+        .enviar{
+            background-color: #1b1b1b;
+            border:0;
+            margin-bottom: 1em;
+            color: #ffffff;
+            padding: 0.2em 0.6em;
+            box-shadow: 2px 2px 2px rgba(12, 205, 70, 0.474);
+
+        }
+
+        .enviar:hover{
+            background-color: #3f3f3f;
+            font-size: 0.82em;
+            border:0;
+            margin-bottom: 1em;
+            color: #ffffff;
+            padding: 0.2em 0.6em;
+            box-shadow: 2px 2px 2px rgba(12, 205, 70, 0.474);
+        }
+
+        .inputUser:focus ~ .labelInput,
+        .inputUser:valid ~.labelInput{
+            top: -20px;
+            font-size: 12px;
+            color:  #7ba070;
+        }
+        #submit{
+            color: #1b3a13;
+            background-color: #ffffff;
+        }
+        #submit:hover{
+            background-color: #a4a5ac;
+        }
+    </style>
+</head>
+<body>
+<div class="form">
+    <div class="box">
+        <div>
+            <h1 id="titulo">Formulário</h1>
+            <br>
+        </div>
+
+   
+        <form action="">
+            <div class = "inputBox">
+                <input type="text" name="nome" id="nome" class="inputUser" required>
+                <label for="nome" class="labelInput"><b>Nome</b></label>
+            </div>
+            <br><br>
+            <div class = "inputBox">
+                <input type="number" name="idade" id="idade" class="inputUser" required>
+                <label for="idade" class="labelInput"><b>Idade</b></label>
+            </div>
+            <br><br>
+
+            <div class = "inputBox">
+                <input type="text" name="profissao" id="profissao" class="inputUser" required>
+                <label for="profissao" class="labelInput"><b>Profissão</b></label>
+            </div>
+            <br><br>
+
+            <div class = "inputBox">
+                <input type="email" name="email" id="email" class="inputUser" required>
+                <label for="email" class="labelInput"><b>Email</b></label>
+            </div>
+            <br><br>
+
+            <div class = "inputBox">
+                <input type="number" name="telefone" id="telefone" class="inputUser" required>
+                <label for="telefone" class="labelInput"><b>Telefone</b></label>
+            </div>
+            <br><br>
+
+            <div class = "inputBox">
+                <label for="data_preenchimento"><b>Data de Preenchimento</b></label>
+                <input type="date" name="data_preenchimento" id="data_preenchimento" required>
+            </div>
+            <br><br>
+
+            <button type="submit" class="enviar">Enviar</button>
+        </form>
+
+
+
+    </div>
+
+</div>
+
+</body>
+</html>
